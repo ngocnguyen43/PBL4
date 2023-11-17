@@ -1,6 +1,6 @@
 from project import app
 from project.service import model
-from flask import render_template, request, url_for,make_response,jsonify
+from flask import  request, make_response,jsonify
 from PIL import Image
 import numpy as np
 @app.route('/', methods = ['POST'])
