@@ -5,7 +5,7 @@ __pycache__/
 
 # C extensions
 *.so
-
+pre_train
 model_*
 model*
 cmd.*
@@ -63,7 +63,8 @@ cover/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
-
+*.keras
+Scripts/
 # Flask stuff:
 instance/
 .webassets-cache

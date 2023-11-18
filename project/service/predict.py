@@ -1,7 +1,7 @@
-import pickle
-model_path = open("model_29_10","rb")
-model = pickle.load(model_path)
-model_path.close()
+from project.service.load_model import load_model
+
 
 def predict(img):
+    model,types = load_model()
+    print(types)
     return model.predict(img)

@@ -1,7 +1,9 @@
 #!/bin/bash
 
-zip_file="model"
-wget --no-check-certificate "https://drive.usercontent.google.com/download?id=14GYKOqjFPTdP3_QbXit7zKtmnI4XjlKn&export=download&authuser=0&confirm=t&uuid=baf9bce2-bc81-4ada-b6c0-5b2c3456af3e&at=APZUnTVKvoNqSITKH1_avz-WD3sq:1700196129999" -O "$zip_file"
+python ./pre_train.py 
+
+zip_file="model.zip"
+wget --no-check-certificate "https://drive.usercontent.google.com/download?id=1UlEvGgo1J1pH6U7MLAVAsXI2cJrxnf39&export=download&authuser=0&confirm=t&uuid=c444613c-1796-4100-b019-5a89709275b1&at=APZUnTXIErDbUIu_vH1CwvKX1uFP:1700241926175" -O "$zip_file"
 if [ $? -eq 0 ]; then
     echo "Download successful!"
 
