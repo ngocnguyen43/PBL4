@@ -1,10 +1,10 @@
 from project import app
 from project.service.predict import predict
 from project.service.pre_train import pre_train
-from flask import  request, make_response,jsonify
+from flask import  request, Response,jsonify
 from PIL import Image
 import numpy as np
-@app.route('/', methods = ['POST'])
+@app.route('/pred', methods = ['POST'])
 def index():
     try:
         imagefile = request.files.get('img', '')
@@ -13,8 +13,7 @@ def index():
         img = np.array(img)
         fts = pre_train(img)
         res = predict(img=fts)
-        print(res)
-        return jsonify({"alr":"alr"})
+        return jsonify({"type":res})
     except Exception as err:
         print(err)
-        return make_response(jsonify({"a":"a"}))
+        return Response(jsonify({"a":"a"}),status=400)
