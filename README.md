@@ -10,4 +10,4 @@
 
 + install virtual env `python -m venv .` then run env `./bin/activate` or `./Scripts/activate`
 + run file run.sh `./run.sh`
-+ run server `flask  run`
++ run server `flask  run` or `flask --app server.py --debug run`
