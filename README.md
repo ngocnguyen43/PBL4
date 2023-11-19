@@ -1,6 +1,13 @@
-### 1. Prerequisite:
+### Prerequisite:
 
-### 2. RUN:
-+ install virtual env `python -m venv .` and run env `./Scripts/activate` or `./bin/activate`
+#### For WIndows
+
++ Make sure End of Line Sequence format is LF
+
+#### For Mac
+
+### RUN:
+
++ install virtual env `python -m venv .` then run env `./bin/activate` or `./Scripts/activate`
 + run file run.sh `./run.sh`
-+ run server `flask --app server.py --debug run`
++ run server `flask  run`
