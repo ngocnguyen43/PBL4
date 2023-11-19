@@ -16,4 +16,4 @@ def index():
         return jsonify({"type":res})
     except Exception as err:
         print(err)
-        return Response(jsonify({"a":"a"}),status=400)
+        return jsonify({"a":"a"})
