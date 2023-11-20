@@ -1,7 +1,8 @@
 from project import app
 from project.service.predict import predict
 from project.service.pre_train import pre_train
-from flask import  request, Response,jsonify
+from project.service.classifier import classifier
+from flask import  request, make_response,jsonify
 from PIL import Image
 import numpy as np
 @app.route('/pred', methods = ['POST'])
@@ -12,8 +13,9 @@ def index():
         img = img.resize((224,224))
         img = np.array(img)
         fts = pre_train(img)
-        res = predict(img=fts)
-        return jsonify({"type":res})
+        pred = predict(img=fts)
+        clss, tps = classifier(pred)
+        return make_response(jsonify({"type":tps , "class": clss}),200)
     except Exception as err:
         print(err)
-        return jsonify({"a":"a"})
+        return make_response(jsonify({"msg":""}),400)

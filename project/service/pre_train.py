@@ -1,5 +1,4 @@
 import numpy as np
-import pickle
 import keras
 def zero_center_normalize_image(image):
     mean = np.mean(image)
