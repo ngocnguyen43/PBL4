@@ -5,11 +5,20 @@ from project.service.classifier import classifier
 from flask import  request, make_response,jsonify
 from PIL import Image
 import numpy as np
+import io
+import base64
 @app.route('/pred', methods = ['POST'])
 def index():
     try:
-        imagefile = request.files.get('img', '')
-        img = Image.open(imagefile)
+        # imagefile = io.BytesIO(request.get_data()).read()
+        # # print(request.form['img'])
+        # # img = Image.frombytes(mode="RGB",size=(224,224),data=imagefile)
+
+        base64_image = request.form['img']
+        # print(base64_image)
+        # Decode base64 string to bytes
+        image_data = base64.b64decode(base64_image)
+        img = Image.open(io.BytesIO(image_data))
         img = img.resize((224,224))
         img = np.array(img)
         fts = pre_train(img)
