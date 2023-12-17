@@ -1,9 +1,8 @@
 #!/bin/bash
 zip_file="model.zip"
 requirement="requirement.txt"
-pip install -r "$requirement"
-python ./pre_train.py 
-wget --no-check-certificate "https://drive.usercontent.google.com/download?id=1Bq-809GB8--XFp330Ik3QcK2uVBxj4Ep&export=download&authuser=0&confirm=t&uuid=cd79fee8-cbdf-4815-b0c7-06815141e0e1&at=APZUnTXBBYWtwO6RUgnr4dD7yDkl:1700331759430" -O "$zip_file"
+pip3 install -r "$requirement"
+wget --no-check-certificate "https://drive.usercontent.google.com/download?id=1f23yibPY479TOhRBJrPYCFjmGWMbElnQ&export=download&authuser=0&confirm=t&uuid=82fa984a-dc1e-4b75-94fb-e60f83bd290e&at=APZUnTWeV3a4Pg5VE09Ji_56b1A5:1702780443723" -O "$zip_file"
 if [ $? -eq 0 ]; then
     echo "Download successful!"
 

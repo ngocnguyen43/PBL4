@@ -13,7 +13,7 @@ TYPES = {
     "MER_THERM":'Mer-therm',
     "METAL_CAN":'Metal can',
     "MILK":'Milk',
-    "NR_PLASTIC":'Nr plastic',
+    "NR PLASTIC":'Nr plastic',
     "PAPER":'Paper',
     "PLASTIC":'Plastic',
     "TEA_BAGS":'Tea bags',
@@ -27,6 +27,7 @@ CLASSIFICATION = {
     "RECYCLE":"recycle"
 }
 def classifier(type):
+    # print(type)
     TPS = TYPES.get(type.upper()).upper()
     print(TPS)
     match TPS:
