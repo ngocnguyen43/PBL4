@@ -12,7 +12,7 @@
 
     * Make sure virtual env is installed, wget, unzip also required
   
-    * Change permission for __run.sh__ ```chmod 755 ./run.sh``` then run
+    * Run __run.sh__ file ```chmod 755 ./run.sh ; sh ./run.sh``` 
 
     * Or Download model directly from [this](https://drive.google.com/drive/folders/1ZtWU8fJB8nI16NkN4mavjut6a5kPCNLl?usp=sharing) then extract inside root folder
 
