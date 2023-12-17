@@ -1,4 +1,4 @@
-### Require:
+### Requirements:
 
 *   #### Windows
     
@@ -6,7 +6,7 @@
   
     + Run ```./run.ps1```
 
-    + To access server from other devices from local network, you need to change WSL port forwrad [this](https://learn.microsoft.com/en-us/windows/wsl/networking)
+    + To access server from other devices within local network, you need to change WSL port forward [this](https://learn.microsoft.com/en-us/windows/wsl/networking)
 
 *   #### Mac
 
@@ -19,4 +19,4 @@
 ### Run:
 
 + Activate vitual env ```./bin/activate``` 
-+ run server ```python3 -m flask  run --host=0.0.0.0``` or ```flask run --host=0.0.0.0```
++ Run server ```python3 -m flask  run --host=0.0.0.0``` or ```flask run --host=0.0.0.0```
