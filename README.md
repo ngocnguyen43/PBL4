@@ -12,7 +12,7 @@
   
     * Change permission for __run.sh__ ```chmod 755 ./run.sh``` then run
 
-    * Or Download model and extract directly inside root folder from [this](https://drive.google.com/drive/folders/1NPQbkelkoFwaq_hNGTBd_qj1YucWB9_-?usp=drive_link)
+    * Or Download model directly from [this](https://drive.google.com/drive/folders/1ZtWU8fJB8nI16NkN4mavjut6a5kPCNLl?usp=sharing) then extract inside root folder
 
 ### Run:
 
