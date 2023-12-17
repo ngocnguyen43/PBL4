@@ -3,6 +3,8 @@
 *   #### Windows
     
     + Make sure WSL is installed
+  
+    + Run ```./run.ps1```
 
     + To access server from other devices from local network, you need to change WSL port forwrad [this](https://learn.microsoft.com/en-us/windows/wsl/networking)
 
